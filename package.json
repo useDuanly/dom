@@ -1,0 +1,14 @@
+{
+  "name": "dom",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "homepage": "/",
+  "devDependencies": {
+    "vite": "^2.9.9"
+  }
+}
