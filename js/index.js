@@ -61,7 +61,5 @@ d.addEventListener("keyup", (e) => {
   teclado(e);
 });
 
-d.addEventListener("click", (e) => {});
-
 tema_oscuro(".dark-theme-btn", "dark-mode");
 networkStatus();
