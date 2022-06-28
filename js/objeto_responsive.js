@@ -6,7 +6,7 @@ function responsiveMedia(id, mq, mobilContent, desktopContent) {
   breakpoint.addEventListener("change", (e) => {
     if (e.matches) {
       //console.log(e);
-      console.log(e.matches);
+      //console.log(e.matches);
       d.getElementById(id).innerHTML = desktopContent;
     } else {
       d.getElementById(id).innerHTML = mobilContent;

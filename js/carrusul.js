@@ -1,5 +1,13 @@
 const d = document;
 export default function Slide(slides, prev, next) {
+  if ("loading" in HTMLImageElement.prototype) {
+    const lazyImages = document.querySelectorAll(slides);
+    lazyImages.forEach((img) => {
+      img.src = img.dataset.src;
+    });
+  } else {
+    // Use our own lazyLoading with Intersection Observers and all that jazz
+  }
   const $slides = d.querySelectorAll(slides),
     $prev = d.querySelector(prev),
     $next = d.querySelector(next);

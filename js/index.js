@@ -15,18 +15,29 @@ import Slide from "./carrusul.js";
 import scrollSpy from "./scroll_espia.js";
 import smallVideo from "./video_inteligente.js";
 import form from "./validar_form.js";
-import lazyLoad from "./lazy_img.js";
+import webCam from "./detention_webcam.js";
+import speechReader from "./narrador.js";
 
 const d = document;
 
-d.addEventListener("DOMContentLoaded", (e) => {
+d.addEventListener("DOMContentLoaded", () => {
   menuhamburgesa(".panel-btn", ".panel", ".menu a");
   digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
-  alarm("./assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
+  alarm("/assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
   cuenta_regresiva(
     "countdown",
-    "Jun 28,2022 02:15",
+    "Jul 28,2022 02:15",
     "Feliz Cumpleaños Duanly Vega Alderete"
+  );
+  cuenta_regresiva(
+    "xiomara",
+    "Jan 6,2023 05:30",
+    "Feliz Cumpleaños Xiomara Herrera Santana"
+  );
+  cuenta_regresiva(
+    "kilian",
+    "Feb 7,2023 05:30",
+    "Feliz Cumpleaños Kilian Manjaro Santana"
   );
   boton_scroll(".scroll-top-btn", ".hidden");
   responsiveMedia(
@@ -49,8 +60,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   Slide(".slider-slide", ".slider-btns .prev", ".slider-btns .next");
   scrollSpy();
   smallVideo();
+  webCam("webcam");
   form();
-  lazyLoad();
 });
 
 d.addEventListener("keydown", (e) => {
@@ -63,3 +74,4 @@ d.addEventListener("keyup", (e) => {
 
 tema_oscuro(".dark-theme-btn", "dark-mode");
 networkStatus();
+speechReader();

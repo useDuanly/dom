@@ -56,7 +56,7 @@ export default function form() {
       })
         .then((res) => (res.ok ? res.json() : Promise.reject(res)))
         .then((data) => {
-          console.log(data);
+          //console.log(data);
           $loader.classList.add("none");
           $response.classList.remove("none");
           $response.innerHTML = `<p>${data.message}</p>`;
@@ -70,13 +70,6 @@ export default function form() {
         .finally(() => {
           setTimeout(() => $response.classList.add("none"), 3000);
         });
-      /*  setTimeout(() => {
-        const TIEMPO_EN_MIL_SEGUNDO = 3000;
-        setTimeout(
-          () => $response.classList.add("none"),
-          TIEMPO_EN_MIL_SEGUNDO
-        );
-      }, TIEMPO_EN_MIL_SEGUNDO); */
     }
   });
 }

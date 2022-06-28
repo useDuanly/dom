@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicios del DOM</title>
-    <link rel="stylesheet" href="./css/hamburgers.css" />
-    <link rel="stylesheet" href="./css/dom-ejercicios.css" />
+    <link rel="stylesheet" href="/css/hamburgers.css" />
+    <link rel="stylesheet" href="/css/dom-ejercicios.css" />
   </head>
 
   <body>
@@ -57,7 +57,14 @@
       </section>
       <section id="seccion3" class="section" data-scroll-spy>
         <h2>Cuenta Regresiva</h2>
-        <div id="countdown"></div>
+        <section>
+          <h2>Duanly</h2>
+          <div id="countdown"></div>
+          <h2>Xiomara</h2>
+          <div id="xiomara"></div>
+          <h2>Kilian</h2>
+          <div id="kilian"></div>
+        </section>
       </section>
       <section id="seccion4" class="section" data-scroll-spy>
         <h2>Responsive con JavaScript</h2>
@@ -99,7 +106,7 @@
         <article class="cards">
           <figure class="card">
             <img
-              data-src="./assets/natural.jpg"
+              src="/assets/natural.jpg"
               class="lazy"
               alt="Nature"
               width="200"
@@ -110,7 +117,7 @@
           </figure>
           <figure class="card">
             <img
-              data-src="./assets/any.jpg"
+              src="/assets/any.jpg"
               class="lazy"
               alt="Any"
               width="200"
@@ -121,7 +128,7 @@
           </figure>
           <figure class="card">
             <img
-              data-src="./assets/teach.jpg"
+              src="/assets/teach.jpg"
               class="lazy"
               alt="Tech"
               width="200"
@@ -132,7 +139,7 @@
           </figure>
           <figure class="card">
             <img
-              data-src="./assets/animals.jpg"
+              src="/assets/animals.jpg"
               class="lazy"
               alt="Animals"
               width="200"
@@ -143,18 +150,18 @@
           </figure>
           <figure class="card">
             <img
-              data-src="./assets/people.jpg"
+              src="/assets/people.jpg"
               class="lazy"
               alt="People"
               width="200"
               height="200"
-              loading="eager"
+              loading="lazy"
             />
             <figcaption>People</figcaption>
           </figure>
           <figure class="card">
             <img
-              data-src="./assets/arch.jpg"
+              src="/assets/arch.jpg"
               class="lazy"
               alt="Architecture"
               width="200"
@@ -189,10 +196,15 @@
         <div class="slider">
           <div class="slider-slides">
             <div class="slider-slide active">
-              <img src="https://placeimg.com/400/400/animals" alt="animals" />
+              <img
+                src="/assets/animals.jpg"
+                alt="animals"
+                width="400px"
+                height="400px"
+              />
             </div>
             <div class="slider-slide">
-              <h4>2</h4>
+              <h4>Demo 2</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias, quidem voluptate aperiam quasi animi, ex earum iure
@@ -201,10 +213,15 @@
               </p>
             </div>
             <div class="slider-slide">
-              <img src="https://placeimg.com/400/400/nature" alt="nature" />
+              <img
+                src="/assets/natural.jpg"
+                alt="nature"
+                width="400px"
+                height="400px"
+              />
             </div>
             <div class="slider-slide">
-              <h4>4</h4>
+              <h4>Demo 4</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus perferendis totam enim quam vel veniam impedit rem
@@ -222,7 +239,7 @@
       <section id="seccion13" class="section" data-scroll-spy>
         <h2>Video Inteligente</h2>
         <video
-          src="./assets/video.mp4"
+          src="/assets/video.mp4"
           muted
           controls
           loop
@@ -249,7 +266,7 @@
         <br />
         <br />
         <video
-          src="./assets/video.mp4"
+          src="/assets/video.mp4"
           muted
           controls
           loop
@@ -318,6 +335,6 @@
     </main>
     <button class="scroll-top-btn hidden">&#11014;</button>
     <button class="dark-theme-btn">🌙</button>
-    <script src="./js/index.js" type="module"></script>
+    <script src="/js/index.js" type="module"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ export default function smallVideo() {
         //console.log(entry.target);
         entry.target.pause();
       }
-      w.addEventListener("visibilitychange", (e) =>
+      w.addEventListener("visibilitychange", () =>
         d.visibilityState === "visible"
           ? entry.target.play()
           : entry.target.pause()

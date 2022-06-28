@@ -2,6 +2,7 @@ const d = document;
 function cuenta_regresiva(id, limitDate, message) {
   const $countdown = d.getElementById(id),
     $countdownDate = new Date(limitDate).getTime();
+  //console.log(id);
 
   let countdownTempo = setInterval(() => {
     let now = new Date().getTime(),

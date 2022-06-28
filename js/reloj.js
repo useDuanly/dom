@@ -21,12 +21,15 @@ export const alarm = (sound, btnPlay, btnStop) => {
   let alarmaTempo;
   const $alarm = d.createElement("audio");
   $alarm.setAttribute("src", sound);
+  $alarm.setAttribute("media-player", "audioPlayer");
+  $alarm.setAttribute("crossOrigin", "anonymous");
+
   //console.log($alarm);
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(btnPlay)) {
       alarmaTempo = setTimeout(() => {
-        console.log($alarm);
+        //console.log($alarm);
         $alarm.play();
       }, 1000);
       e.target.disabled = true;
